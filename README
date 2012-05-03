@@ -1,5 +1,5 @@
 holcomb specific dotfiles
 assumes ~/src/dotfiles repo exists
 
-to use:
+to use bashrc:
 echo ". ~/src/dotfiles/holcomb.bashrc" >> ~/.bashrc
