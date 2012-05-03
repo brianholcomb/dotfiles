@@ -1,5 +1,6 @@
 holcomb specific dotfiles
-assumes ~/src/dotfiles repo exists
 
-to use bashrc:
-echo ". ~/src/dotfiles/holcomb.bashrc" >> ~/.bashrc
+to use:
+mkdir -p ~/src
+git clone https://github.com/brianholcomb/dotfiles.git ~/src/dotfiles
+~/src/dotfiles/init.sh
