@@ -8,8 +8,9 @@ then
 	MANPATH=~/man:$MANPATH
 fi
 
-# vi mode forever
+# vi forever
 set -o vi
+EDITOR=vi
 
 # prompt
 PS1='\u@\h[\w]\$ '
@@ -34,3 +35,5 @@ case `uname -s` in
 		alias ptree='pstree -g 3 -w'
 	;;
 esac
+
+export EDITOR PATH MANPATH PS1
