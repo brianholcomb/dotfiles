@@ -1,9 +1,9 @@
 # Prefer homedir local stuff
-if [[ -d ~/bin ]] && [[ ! $PATH =~ '\~\/bin' ]]
+if [[ -d ~/bin ]] && [[ ! $PATH =~ ~/bin ]]
 then
 	PATH=~/bin:$PATH
 fi
-if [[ -d ~/man ]] && [[ ! $MANPATH =~ '\~\/man' ]]
+if [[ -d ~/man ]] && [[ ! $MANPATH =~ ~/man ]]
 then
 	MANPATH=~/man:$MANPATH
 fi
