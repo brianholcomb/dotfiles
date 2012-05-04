@@ -3,6 +3,7 @@
 
 PATH=/bin:/usr/bin
 BASHRC=~/.bashrc
+SCREENRC=~/.screenrc
 
 
 # avoid appending if personal bashrc is already being sourced
@@ -16,3 +17,10 @@ then
 	echo "# Use system defaults, then include personal configuration" >> $BASHRC
 	echo ". ~/src/dotfiles/holcomb.bashrc" >> $BASHRC
 fi
+
+# add link to screenrc
+if [ -a $SCREENRC ]
+then
+	\rm $SCREENRC
+fi
+ln -s ~/src/dotfiles/screenrc $SCREENRC
