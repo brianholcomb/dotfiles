@@ -25,6 +25,14 @@ esac
 # aliases
 alias ls='ls -F'
 alias rm='rm -i'
+# git aliases
+alias gb='git branch'
+alias gba='git branch -a'
+alias gc='git commit -v'
+alias gd='git diff'
+alias gl='git pull'
+alias gp='git push'
+alias gst='git status'
 case `uname -s` in
 	Linux)
 		alias ptree='pstree -aclnpuU'
