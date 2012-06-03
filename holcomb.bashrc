@@ -16,7 +16,7 @@ EDITOR=vi
 PS1='\u@\h[\w]\$ '
 case "$TERM" in
 	xterm*|rxvt*|screen*)
-		PS1="\[\e]0;\u@\h[\w]\$\]$PS1"
+		PROMPT_COMMAND='echo -en "\033];${USER}@${HOST}[${PWD}]\$\007"'
 	;;
 	*)
 	;;
