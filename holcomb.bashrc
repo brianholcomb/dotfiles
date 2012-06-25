@@ -8,6 +8,8 @@ then
 	MANPATH=~/man:$MANPATH
 fi
 
+PATH=$PATH:/sbin/:/usr/sbin
+
 # vi forever
 set -o vi
 EDITOR=vi
