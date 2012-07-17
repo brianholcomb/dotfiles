@@ -8,12 +8,12 @@ then
 	MANPATH=~/man:$MANPATH
 fi
 
-if ! ssh-add -l 2>&1 > /dev/null
+if ! ssh-add -l > /dev/null 2>&1
 then
 	if [ -f ~/.ssh-agent ]
 	then
 		. ~/.ssh-agent
-		if ! ssh-add -l 2>&1 > /dev/null
+		if ! ssh-add -l > /dev/null 2>&1
 		then
 			ssh-add
 		fi
