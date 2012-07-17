@@ -8,6 +8,22 @@ then
 	MANPATH=~/man:$MANPATH
 fi
 
+if ! ssh-add -l 2>&1 > /dev/null
+then
+	if [ -f ~/.ssh-agent ]
+	then
+		. ~/.ssh-agent
+		if ! ssh-add -l 2>&1 > /dev/null
+		then
+			ssh-add
+		fi
+    else
+		ssh-agent | grep -v 'Agent pid' > ~/.ssh-agent
+		.  ~/.ssh-agent
+		ssh-add
+	fi
+fi
+
 # vi forever
 set -o vi
 EDITOR=vi
