@@ -24,3 +24,6 @@ then
 	\rm $SCREENRC
 fi
 ln -s ~/src/dotfiles/screenrc $SCREENRC
+
+# I really hate motds
+touch ~/.hushlogin
