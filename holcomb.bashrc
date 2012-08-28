@@ -15,6 +15,8 @@ then
                 . ~/.ssh-agent
                 if ! ssh-add -l > /dev/null 2>&1
                 then
+			ssh-agent | grep -v 'Agent pid' > ~/.ssh-agent
+			.  ~/.ssh-agent
                         ssh-add
                 fi
     else
