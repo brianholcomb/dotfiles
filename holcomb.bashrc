@@ -3,7 +3,7 @@ PATH=$PATH:/sbin:/usr/sbin
 set -o vi
 EDITOR=vi
 
-PS1='\[\e]0;\h:\w\a\]\h:\w\$ '
+PS1='\[\e]0;[\h:\w]\a\]\h:\w\$ '
 
 alias ls='ls -F'
 alias rm='rm -i'
