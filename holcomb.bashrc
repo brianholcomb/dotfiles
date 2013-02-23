@@ -1,14 +1,10 @@
 PATH=$PATH:/sbin:/usr/sbin
 
-# vi forever
 set -o vi
 EDITOR=vi
 
-# prompt
-PS1='\[\e]0;\u@\h:\w\a\]\u@\h:\w\$ '
-#PS1='\u@\h[\w]\$ '
+PS1='\[\e]0;\h:\w\a\]\h:\w\$ '
 
-# aliases
 alias ls='ls -F'
 alias rm='rm -i'
 case `uname -s` in
@@ -20,4 +16,4 @@ case `uname -s` in
 	;;
 esac
 
-export EDITOR PATH MANPATH PS1
+export EDITOR PATH PS1
