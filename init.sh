@@ -4,6 +4,7 @@
 PATH=/bin:/usr/bin
 BASHRC=~/.bashrc
 SCREENRC=~/.screenrc
+GITCONFIG=~/.gitconfig
 
 
 # avoid appending if personal bashrc is already being sourced
@@ -24,6 +25,7 @@ then
 	\rm $SCREENRC
 fi
 ln -s ~/src/dotfiles/screenrc $SCREENRC
+ln -s ~/src/dotfiles/gitconfig $GITCONFIG
 
 # I really hate motds
 touch ~/.hushlogin
