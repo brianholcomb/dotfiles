@@ -1,9 +1,7 @@
 PATH=$PATH:/sbin:/usr/sbin
 
-set -o vi
-EDITOR=vi
-
 PS1='\[\e]0;[\u@\h:\w]\a\]\u@\h:\w\$ '
+EDITOR=vi
 
 alias ls='ls -F'
 alias rm='rm -i'
@@ -16,7 +14,8 @@ case `uname -s` in
 	;;
 esac
 
-export EDITOR PATH PS1
-unset HISTFILESIZE HISTSIZE
 
+set -o vi
 shopt -s histappend
+unset HISTFILESIZE HISTSIZE
+export EDITOR PATH PS1 HISTFILESIZE HISTSIZE
