@@ -17,3 +17,6 @@ case `uname -s` in
 esac
 
 export EDITOR PATH PS1
+unset HISTFILESIZE HISTSIZE
+
+shopt -s histappend
